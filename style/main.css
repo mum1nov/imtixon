@@ -1,0 +1,117 @@
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+         url('../fonts/plus-jakarta-sans-v3-latin-regular.woff2') format('woff2'),
+         url('../fonts/plus-jakarta-sans-v3-latin-regular.woff') format('woff');
+}
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: 
+         url('../fonts/plus-jakarta-sans-v3-latin-500.woff2') format('woff2'), 
+         url('../fonts/plus-jakarta-sans-v3-latin-500.woff') format('woff');
+  }
+ 
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: 
+         url('../fonts/plus-jakarta-sans-v3-latin-600.woff2') format('woff2'), 
+         url('../fonts/plus-jakarta-sans-v3-latin-600.woff') format('woff'); 
+  }
+
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+         url('../fonts/plus-jakarta-sans-v3-latin-700.woff2') format('woff2'),
+         url('../fonts/plus-jakarta-sans-v3-latin-700.woff') format('woff'); 
+  }
+
+
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+body{
+    margin: 0%;
+}
+img{
+    vertical-align: middle;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  .container{
+    width: 1256px;
+    padding: 30px 20px;
+    margin: 0 auto;
+  }
+
+
+  /* header start */
+
+  .window-inner{
+    padding:  0px 20px;
+    width: 1256px;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    top: 30px;
+    left: 0%;
+    right: 0%;
+    margin: 0 auto;
+    }
+  .window-logo{
+    margin-right: 50px;
+  }
+
+.window-list{
+    padding: 0%;
+    column-gap: 30px;
+    display: flex; 
+    list-style-type: none;
+}
+.window-link{
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 150%;
+   color: #101010;
+}
+.window-contact{
+    margin-left: 527px;
+    padding: 12px 24px;
+    width: 156px;
+    background: #101010;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.window-line-span{
+    top: 120px;
+    z-index: 11;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #EEEEF4
+}
+
+/* header finish */
