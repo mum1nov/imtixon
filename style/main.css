@@ -40,6 +40,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    /* flex-wrap: wrap; */
 }
 body{
     margin: 0%;
@@ -56,6 +57,9 @@ img{
     white-space: nowrap;
     width: 1px;
   }
+.opening-window{
+    background-color: #fff;
+}
   .container{
     position: relative;
     top: 91px;
@@ -67,17 +71,19 @@ img{
   /* header start */
 
   .window-inner{
-    padding:  0px 20px;
+    background-color: #fff;
+    padding:  30px 20px 34px;
     width: 1256px;
     position: fixed;
-    z-index: 10;
+    z-index: 10; 
     display: flex;
     align-items: center;
-    top: 30px;
+    top: 0px;
+    /* padding-top: 30px; */
     left: 0%;
     right: 0%;
     margin: 0 auto;
-    }
+}
   .window-logo{
     margin-right: 50px;
   }
@@ -127,6 +133,9 @@ color: #1AAB7B;
     border-radius: 6px;
 }
 .window-line-span{
+    background-color: #fff;
+    margin: 0%;
+    padding: 0%;
     top: 120px;
     z-index: 11;
     position: fixed;
@@ -140,13 +149,16 @@ color: #1AAB7B;
 
 
 .business-inner{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
 }
 .business-inform{
     width: 550px;
     display: inline-block;
+    margin-bottom: 196px;
 }
 .business-title{
 font-weight: 700;
@@ -189,3 +201,45 @@ margin: 20px 0px 60px;
 
 
  /* BUSINESS */
+
+
+
+ /* SUPPORT */
+.support{
+    position: relative; 
+    top: 156px;
+    background-color: #F2F4F6;
+}
+.support-inner{
+   padding: 50px 0px;
+}
+ .support-title{
+    position: absolute;
+    top: 50px;
+    left: 0%;
+    right: 0%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    text-align: center;
+    color: #101010;
+    padding: 0%;
+ }
+
+ .support-list{
+    list-style-type: none;
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    
+ }
+ .support-item{
+    padding: 40px 30px;
+    width: 384px;
+    background: #F2F4F6;
+    border: 2px solid #E1E7ED;
+    border-radius: 6px;
+ }
+ 
