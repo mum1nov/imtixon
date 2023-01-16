@@ -10,8 +10,56 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
 </head>
-
 <body>
+    <div class="container">
+        <h1 class="title">Movies catalog</h1>
+    </div>
+    <div class=" offset-1 container d-flex row">
+        <div class=" left_box col-12 col-sm-12 col-md-4 col-lg-4 mb-3 p-0 col-3">
+            <form action="https://echo.htmlacademy.ru " class="p-0 form m-0">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="text" class="form-control" name="film-name" id="exampleFormControlInput1"
+                    placeholder="ave">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="text" class="form-control" name="film" id="exampleFormControlInput1"
+                    placeholder="5">
+                <select name="film type" class="form-select mb-3 mt-3" aria-label="Default select example">
+                    <option selected>All</option>
+                    <option value="drama">drama</option>
+                    <option value="fantacy">fantacy</option>
+                    <option value="horror">horror</option>
+                </select>
+                <select name="film quality" class="form-select" aria-label="Default select example">
+                    <option selected disabled>Rating (hight to low)</option>
+                    <option value="hight">Hight</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <button class="btn btn-primary text-light mt-3 w-100" type="submit">Search</button>
+            </form>
+            <div class="h4 mt-4"> BOOKMARKED MOVIES </div>
+            <ul class="list-group w-100 mt-3 ">
+                <li class="list-group-item fw-bold">
+                    Avengars:Infinity War <br>
+                    <div class="btn btn-danger text-white mt-2">REMOVE</div>
+                </li>
+                <li class="list-group-item fw-bold">
+                    The Avengars <br>
+                    <div class="btn btn-danger text-white mt-2">REMOVE</div>
+                </li>
+                <li class="list-group-item fw-bold">
+                    12years a slave <br>
+                    <div class="btn btn-danger text-white mt-2">REMOVE</div>
+                </li>
+            </ul>
+        </div> 
+        <div class="container 
+        mt-4 col-8 right-box">
+        <p class="text"></p>
+        <ul class="list-unstyled row js_list"></ul>
+    </div></div>
+   
+    <script src="./js/movies.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

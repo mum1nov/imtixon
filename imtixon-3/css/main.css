@@ -4,7 +4,9 @@ html {
     flex-wrap: wrap;
 }
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     flex-wrap: wrap;
 
@@ -15,10 +17,32 @@ body {
     display: flex;
     flex-direction: column;
 }
-main{
+
+main {
     flex-grow: 1;
 }
+
 img {
     vertical-align: middle;
     object-fit: cover;
+}
+
+.title {
+    text-align: center;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.left_box {
+    position: fixed;
+    width: 100%;
+    max-width: 340px;
+}
+
+.right-box {
+    position: absolute;
+    left: calc(33%);
 }
