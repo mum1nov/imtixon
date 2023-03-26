@@ -61,7 +61,7 @@ fetch('https://fakestoreapi.com/products')
 elContainer.addEventListener('click', (e) => {
     e.preventDefault()
     if (e.target.className == "delete-product") {
-        console.log(e.target.getAttribute("product-id"))
+        console.log(`siz shu ${e.target.getAttribute("product-id")}chi raqamdagi  mahsulotni o'chirdingiz`)
         fetch(`https://fakestoreapi.com/products/${e.target.getAttribute("product-id")}`, {
             method: "DELETE"
         })

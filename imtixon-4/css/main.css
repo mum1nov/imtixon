@@ -64,6 +64,8 @@ img {
 .link {
     text-decoration: none;
     color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
 }
 
 .logo {
@@ -80,7 +82,7 @@ img {
 .market-container {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
 
@@ -208,7 +210,7 @@ img {
     background-color: #fff;
 }
 
-.form-reg> input{
+.form-reg>input {
     font-family: sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -230,19 +232,31 @@ img {
     color: red;
     background-color: #fff;
 }
-.form-reg>p{
+
+.form-reg>p {
     font-family: sans-serif;
     text-align: center;
     font-size: 18px;
     font-weight: 800;
     color: black;
 }
-.site-navbar{
+
+.site-navbar {
     display: flex;
-    width: 50%;
+    width: 20%;
     background-color: rgb(17, 63, 171);
     border-radius: 20px;
     align-items: center;
     padding: 10px 0px;
+    place-items: center;
 
+}
+
+.list-reg {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    padding: 5px 10px;
+    /* gap: 30px; */
+    justify-content: space-between;
 }
