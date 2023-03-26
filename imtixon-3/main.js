@@ -1,17 +1,33 @@
 var elList = document.querySelector('.js_list')
-var kinolar = movies.slice(0, 50)
 var elText = document.querySelector('.text')
 elText.textContent = 'Search result :' + kinolar.length
+let elSelect = document.querySelector('.js-select')
+var elForm = document.querySelector('.form')
+var elInput = document.querySelector('.form-control')
 var categories = []
-
-for (var item of kinolar) {
-    var categori = item.Categories.split('|')
-    for (const things of categori) {
-        if (!(categories.includes(things))){
+var kinolar = movies.slice(0, 100)
+for (const item of kinolar) {
+    catalog = item.Categories.split('|')
+    for (const things of catalog) {
+        if (!(categories.includes(things))) {
             categories.push(things)
         }
-
     }
+}
+for (const toti of categories.sort()) {
+    var newOptions = document.createElement('option')
+    newOptions.value = toti
+    newOptions.textContent = toti
+    elSelect.appendChild(newOptions)
+
+}
+let reyGrade = []
+
+for (var item of kinolar) {
+    
+    var reyting = item.imdb_rating
+    reyGrade.push(reyting)
+    
     var newA = document.createElement('a')
     newA.setAttribute('href', `https://www.youtube.com/watch?v=${item.ytid}`)
     newA.setAttribute('class', 'btn btn-outline-primary ')
@@ -48,14 +64,14 @@ for (var item of kinolar) {
     calendarBox.setAttribute('class', 'd-flex align-items-bottom mb-1')
     calendarBox.appendChild(calendarImg)
     calendarBox.appendChild(calendar)
-
+    
     var starImg = document.createElement('img')
     starImg.setAttribute('src', './images/start.png')
     starImg.height = '25'
     starImg.classList.add('me-2')
     var star = document.createElement('p')
     star.textContent = item.imdb_rating
-
+    
     var starBox = document.createElement('div')
     starBox.setAttribute('class', 'd-flex align-items-bottom mb-4')
     starBox.appendChild(starImg)
@@ -83,4 +99,4 @@ for (var item of kinolar) {
     
     elList.appendChild(newLi)
 }
-console.log(categories)
+
