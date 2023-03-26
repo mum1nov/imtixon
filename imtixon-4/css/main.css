@@ -10,18 +10,21 @@ html {
 *::before {
     box-sizing: border-box;
     flex-wrap: wrap;
-
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(188, 187, 187, 0.527);
+    background-color: rgb(188, 187, 187);
 }
 
 main {
     flex-grow: 1;
+    width: 100%;
+    height: 100vh;
 }
 
 img {
@@ -43,6 +46,8 @@ img {
     width: 100%;
     background-color: rgb(17, 63, 171);
     border-radius: 20px;
+    align-items: center;
+    padding: 10px 0px;
 
 }
 
@@ -51,9 +56,193 @@ img {
     list-style-type: none;
     flex-grow: 1;
     gap: 15px;
+    align-items: center;
+    justify-content: right;
+    padding-right: 30px;
 }
 
 .link {
     text-decoration: none;
-    color: aquamarine;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.log-img {
+    margin-right: 10px;
+}
+
+.market-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    box-shadow: 0px 0px 18px rgb(236, 229, 229);
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.box-pic {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.box-pic>img {
+    width: 50%;
+    min-height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card>h4 {
+    margin-top: auto;
+    font-size: 20px;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+
+.card>p {
+    color: gray;
+    word-break: break-word;
+    font-size: 14px;
+}
+
+.delete-product {
+    margin-top: 15px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 5px darkred;
+
+}
+
+.delete-product:active {
+    opacity: 0.6;
+}
+
+.pic-line {
+    display: flex;
+    align-items: center;
+}
+
+.pic-line>img {
+    width: 20px;
+}
+
+.pic-line>strong {
+    display: block;
+    margin: 10px 0;
+    color: red;
+    margin-right: auto;
+    word-break: break-word;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 8px #fff;
+    background-color: #fff;
+}
+
+.form>p {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+}
+
+.form>input {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: darkslategray;
+    border: none;
+    outline: 0.2px solid darkblue;
+    padding: 2px 5px;
+    border-radius: 7px;
+}
+
+.form>button {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 7px;
+    outline: 0.3px solid red;
+    color: red;
+    background-color: #fff;
+}
+
+.form-reg {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 8px #fff;
+    background-color: #fff;
+}
+
+.form-reg> input{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: darkslategray;
+    border: none;
+    outline: 0.2px solid darkblue;
+    padding: 2px 5px;
+    border-radius: 7px;
+}
+
+.form-reg>button {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 7px;
+    outline: 0.3px solid red;
+    color: red;
+    background-color: #fff;
+}
+.form-reg>p{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+}
+.site-navbar{
+    display: flex;
+    width: 50%;
+    background-color: rgb(17, 63, 171);
+    border-radius: 20px;
+    align-items: center;
+    padding: 10px 0px;
+
 }
